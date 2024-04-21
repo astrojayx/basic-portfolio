@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Kishan Tomar">
+        <meta name="description" content="This page contains all the things I am learning regarding HTML with the help of a YouTube video."> 
+        <title>My First HTML Program</title>
+        <link rel="icon" href="htm.png" type="image/x-icon">
+        <link rel="stylesheet" href="main.css" type="text/css">
+        
+        <style>
+            h1 { text-align: center; font-style: italic; }
+            .center { display: flex; justify-content: center; align-items: center; }
+            .timezone { font-style: italic; }
+        </style>
+        
+        <script type="text/javascript">
+            // Set time zone formatting
+            let options = {
+                timeZone: 'Asia/Kolkata',
+                hour: 'numeric',
+                minute: 'numeric',
+                second: 'numeric',
+            },
+            formatter = new Intl.DateTimeFormat([], options);
+
+            // Set time update
+            setInterval(() => {
+                document.querySelector("#time").innerText = formatter.format(new Date());
+            }, 1000);
+        </script>
+    </head>
+    <body>
+        <h1>KISHAN TOMAR</h1>
+        
+        <div class="center">
+            <img src="gwl.jpg" alt="Gwalior" width="600">
+        </div>
+        <BR>
+        
+        
+        <div class="center">
+            <span id="timezone" class="timezone">
+                <a href="https://24timezones.com/current_time/india_gwalior_clock.php">TIME IN GWALIOR CITY</a> - 
+                <span id="time">0:00 PM</span>
+                <a href="https://24timezones.com/India/time">IND</a>
+            </span>
+        </div>
+
+       <p class="center">
+        <a href="text.html">Texts</a>&nbsp; //&nbsp;
+          <a href="poem.html">Poems</a>&nbsp; //&nbsp;
+          <a href="about.html">About-me</a>&nbsp; //&nbsp;
+          <a href="contact.html">Contact-me</a>
+          
+
+       </p>
+       <br><br><br>
+
+
+        <p class="center">&copy;JAYX</a></p>
+      
+    </body>
+</html>
